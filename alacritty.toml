@@ -1,0 +1,131 @@
+# import = [
+  # "~/.config/alacritty/themes/nord.toml"
+# ]
+# default shell is $SHELL
+shell = "/usr/bin/zsh"
+
+# default none. Directory the shell is started in
+working_directory = "/home/fukuda/Documents/"
+
+# default true. live config reload
+live_config_reload = true
+
+[window]
+
+# Default: { column = 0, lines = 0 } fall back recommended size
+
+dimensions = { columns = 80, lines =20} # max size in 1920 x 1080
+
+# Window startup position.  "None" | {x = 333,y = 444} makes window to the center with efffort.
+position = { x = 333, y = 444 }
+
+# default padding = { x = <integer>, y = <integer> }
+padding = { x = 20, y = 15 }
+
+# Spread additional padding evenly around the terminal content. default false
+dynamic_padding =true
+
+#  border and titles Full | None | Transparent(macOs)| Buttonless(macOs)
+decorations = "Full"
+
+# opacity <float>
+opacity = 1.0
+
+# blur  valid only on macOs or KDE Wayland
+blur = false
+
+# startup "Windowed" | "Maximized" | "Fullscreen" | "SimpleFullscreen" 
+startup_mode = "Windowed"
+
+# window tile
+# title = "Alacritty"
+
+# Allow terminal applications to change Alacritty's window title.
+dynamic_title = true
+
+
+#decorations_theme_variant = "Dark" | "Light" | "None"
+decorations_theme_variant = "None" # follow system
+
+# resize_increments = true | false
+resize_increments = true
+
+# make Option key as Alt <string> OnlyLeft| OnlyRight | Both | None
+option_as_alt = "None"
+
+[scrolling]
+
+# maximum numer of lines in alacritty
+history = 1000
+
+# Number of line scrolled for every input scroll increment.
+multiplier = 3
+
+[font]
+
+ normal = {family = "GeistMono", style = "Regualr"}
+
+# bold = {family = "GeistMono Bold", style = "Bold"}
+
+# italic = {family = "GeistMono ", style = "Italic"}
+
+size = 12.00
+
+# letter spacing
+offset =  { x = 0, y = 0 }
+
+# line-height
+glyph_offset=  { x = 0, y = 0 }
+
+# Alacritty will use a custom built-in font for box drawing
+builtin_box_drawing = false
+
+# use import better
+
+[colors.hints]
+start = { foreground = "#181818", background = "#f4bf75" }
+
+end = { foreground = "#181818", background = "#ac4242" }
+
+[bell]
+
+# animation = "Ease" | "EaseOut" | "EaseOutSine" | "EaseOutQuad" | "EaseOutCubic" | "EaseOutQuart" | "EaseOutQuint" | "EaseOutExpo" | "EaseOutCirc" | "Linear"
+animation = "Linear"
+
+# unit millseconds
+duration = 0
+
+color = "#ffffff"
+
+command = "None"
+
+[cursor]
+
+# Block" | "Underline" | "Beam"
+style = "Block"
+
+#  "Never" | "Off" | "On" | "Always"
+# blinking = "Never"
+# blink_interval = 750 <integer> millseconds
+# blink_timeout = 5
+
+vi_mode_style = "None"
+
+unfocused_hollow = true
+
+thickness = 0.15
+
+[terminal]
+
+# osc52 = "Disabled" | "OnlyCopy" | "OnlyPaste" | "CopyPaste"
+osc52 = "CopyPaste"
+
+[mouse]
+
+hide_when_typing = false
+
+# copy when select
+# bindings = [
+#   { mouse = "Left", mode = "AppCursor", mods = "Control", action = "Copy"},
+#   { mouse = "Right", mode = "AppCursor", mods = "Control", action = "Paste" },
+# ]kk
